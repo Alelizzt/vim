@@ -27,7 +27,11 @@ if count(g:bundle_groups, 'devel')
         Plug 'roxma/vim-hug-neovim-rpc'
     endif
 
-    Plug 'scroolose/nerdtree'
+    "menu NerdTree
+    Plug 'scrooloose/nerdtree'
+    "linter o corrector de codigos
+    Plug 'dense-analysis/ale'
+
 endif
 
 " COLORSHEME
