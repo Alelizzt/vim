@@ -15,6 +15,7 @@ if count(g:bundle_groups, 'general')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'easymotion/vim-easymotion'
+    Plug 'tpope/vim-fugitive'
 endif
 
 " DESARROLLO
