@@ -42,8 +42,7 @@ colorscheme monokai
 set nobackup
 set nowb
 set noswapfile
-set buftype=nofile
-set bufhidden=hide
+set completeopt-=preview
 
 " Configuracion syntastic
 let g:syntastic_always_populate_loc_list = 1
