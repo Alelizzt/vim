@@ -40,7 +40,8 @@ if count(g:bundle_groups, 'devel')
     Plug 'dense-analysis/ale'
     "Iconos
     Plug 'ryanoasis/vim-devicons'
-
+    "cosas Git
+    Plug 'airblade/vim-gitgutter' 
 endif
 
 " LENGUAJES
