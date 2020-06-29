@@ -1,5 +1,6 @@
 " Asignamos la tecla lider
-mapleader=" "
+let g:mapleader=" "
+
 let NERDTreeQuitOnOpen=1
  
 " Buscar 2 letras
