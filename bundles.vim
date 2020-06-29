@@ -31,6 +31,9 @@ if count(g:bundle_groups, 'devel')
     Plug 'scrooloose/nerdtree'
     "linter o corrector de codigos
     Plug 'dense-analysis/ale'
+    "Iconos
+    Plug 'ryanoasis/vim-devicons'
+
 
 endif
 
