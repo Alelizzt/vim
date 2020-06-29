@@ -1,3 +1,15 @@
+" Required:
+if has('vim_starting')
+  set nocompatible
+  set sessionoptions-=options
+endif
+
+" Plug Groups
+" List only the plugin groups you will use
+if !exists('g:bundle_groups')
+  let g:bundle_groups=['general', 'devel', 'languages', 'colorscheme']
+endif
+
 " GENERAL
 if count(g:bundle_groups, 'general')
     Plug 'vim-airline/vim-airline'
