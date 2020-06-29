@@ -27,7 +27,13 @@ if count(g:bundle_groups, 'devel')
         Plug 'roxma/nvim-yarp'
         Plug 'roxma/vim-hug-neovim-rpc'
     endif
-
+    
+    Plug 'Shougo/neosnippet'
+    Plug 'Shougo/neosnippet-snippets'
+    "cosas de html
+    Plug 'mattn/emmet-vim'
+    "cerrar corchetes automaticamente
+    Plug 'jiangmiao/auto-pairs'
     "menu NerdTree
     Plug 'scrooloose/nerdtree'
     "linter o corrector de codigos

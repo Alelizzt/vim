@@ -33,6 +33,13 @@ let g:airline_theme='powerlineish'
 
 " NerdTree config
 let NERDTreeQuitOnOpen=1
+let g:NERDTreeIgnore = [
+        \ 'node_modules',
+        \ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
+        \ '\.o$', '\.so$', '\.egg$', '^\.git$', '^\.svn$' ]
+
+" emmet
+let g:user_emmet_leader_key = '~'
 
 " Deoplete
 let deoplete_readme=expand('~/.vim/bundle/deoplete.nvim/README.md')
@@ -79,4 +86,19 @@ if filereadable(deoplete_readme)
     let g:deoplete#sources#omni#input_patterns.perl='\h\w*->\h\w*\|\h\w*::'
     let g:deoplete#sources#omni#input_patterns.java='\%(\h\w*\|)\)\.'
 endif
+
+" For snippet_complete marker.
+if has('conceal')
+    set conceallevel=2 concealcursor=i
+endif
+
+" Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
 
