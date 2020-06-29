@@ -34,8 +34,18 @@ if count(g:bundle_groups, 'devel')
     "Iconos
     Plug 'ryanoasis/vim-devicons'
 
-
 endif
+
+" LENGUAJES
+if count(g:bundle_groups, 'languages')
+  Plug 'ap/vim-css-color'
+  Plug 'sheerun/vim-polyglot'
+  Plug 'othree/html5.vim'
+  Plug 'othree/javascript-libraries-syntax.vim'
+endif
+
+
+
 
 " COLORSHEME
 if count(g:bundle_groups, 'colorscheme')
