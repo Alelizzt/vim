@@ -42,7 +42,7 @@ let g:NERDTreeIgnore = [
 let g:user_emmet_leader_key = '~'
 
 " Deoplete
-let deoplete_readme=expand('~/.vim/bundle/deoplete.nvim/README.md')
+let deoplete_readme=expand('~/.vim/plugged/deoplete.nvim/README.md')
 if filereadable(deoplete_readme)
     let g:deoplete#enable_at_startup = 1
     let g:deoplete#enable_auto_delimiter = 1
@@ -86,6 +86,11 @@ if filereadable(deoplete_readme)
     let g:deoplete#sources#omni#input_patterns.perl='\h\w*->\h\w*\|\h\w*::'
     let g:deoplete#sources#omni#input_patterns.java='\%(\h\w*\|)\)\.'
 endif
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
 " For snippet_complete marker.
 if has('conceal')

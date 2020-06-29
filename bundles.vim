@@ -41,7 +41,9 @@ if count(g:bundle_groups, 'devel')
     "Iconos
     Plug 'ryanoasis/vim-devicons'
     "cosas Git
-    Plug 'airblade/vim-gitgutter' 
+    Plug 'airblade/vim-gitgutter'
+    "test
+    Plug 'vim-syntastic/syntastic'
 endif
 
 " LENGUAJES
