@@ -23,7 +23,7 @@ if count(g:bundle_groups, 'devel')
     if has ('nvim')
         Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugs' }
     else
-        Plug 'Shoigo/deoplete.nvim'
+        Plug 'Shougo/deoplete.nvim'
         Plug 'roxma/nvim-yarp'
         Plug 'roxma/vim-hug-neovim-rpc'
     endif
